@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style type="text/css">
-    </style>
+<style>
+    label {
+        width: 130px;
+        display: inline-block;}
+</style>
 </head>
 <body>
     <!-- form 태그 필요 속성 3가지 추가. -->
@@ -12,22 +15,54 @@
 
         <!-- 로그인 -->
         <fieldset>
+            <legend>로그인</legend>
+            <div><label for="id">아이디: </label> <input type="text" name="id" id="id"></div>
+            <div><label for="pw">패스워드: </label> <input type="password" name="pw" id="pw"></div>
         </fieldset>
-
         <!-- 회원가입 -->
         <fieldset>
+            <legend>회원가입</legend>
+            <div><label for="id_1">아이디:</label>   <input type="text" name="id_1" id="id_1"></div>
+            <div><label for="pw_1">패스워드:</label>  <input type="password" name="pw_1" id="pw_1"></div>
+            <div><label for="Pw_2">패스워드 확인: </label> <input type="password" name="Pw_2" id="Pw_2"></div>
+            <div><label for="name">이름:</label> <input type="text" name="name" id="name" placeholder="이름을 입력하세요"></div>
+            <div><label for="mail">이메일:</label> <input type="email" name="mail" id="mail"></div>
+            <div><label for="number">전화번호:</label> <input type="number" name="number" id="number"></div>
+            <div><label for="date">생년월일: </label> <input type="date" name="date" id="date"></div>
         </fieldset>
 
         <!-- 수강신청 -->
         <fieldset>
+            <legend>수강신청</legend>
+            <div><label for="eng">영어초급: </label><input type="radio" name="eng" id="eng" checked></div>
+            <div><label for="eng">영어중급: </label><input type="radio" name="eng" id="eng"></div>
+            <div><label for="eng">영어고급: </label><input type="radio" name="eng" id="eng"></div>
+            <p></p>
+            <div><label for="eng_4">영어초급: </label><input type="checkbox" name="eng_4" id="eng_4"></div>
+            <div><label for="eng_5">영어중급: </label><input type="checkbox" name="eng_5" id="eng_5" checked="on"></div>
+            <div><label for="eng_6">영어고급: </label><input type="checkbox" name="eng_6" id="eng_6"></div> 
         </fieldset>
 
         <!-- selec박스 -->
         <fieldset>
+            <select name="" id="">
+                <optgroup label="공과대학">
+                    <option value="건축과">건축과</option>
+                    <option value="토목과">토목과</option>
+                </optgroup>
+                <optgroup label="자연과학대학">
+                    <option value="수학과" selected>수학과</option>
+                    <option value="생물학과">생물학과</option>
+                </optgroup>
+            </select>
         </fieldset>
-
         <!-- 전송 버튼 : form 을 완료 -->
         <!-- 초기화 버튼 :  form 입력 값을 초기화  -->
+        <center>
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
+        </center>
+
 
     </form>
 

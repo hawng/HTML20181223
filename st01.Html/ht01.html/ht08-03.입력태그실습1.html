@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style type="text/css">
+    <style> label { width: 100px; display: inline-block;}
     </style>
 </head>
 <body>
-    <!-- fieldset & legend -->
+    <!-- fieldset & legend 테두리 선 -->
     <!-- form 태그 필요 속성 3가지 추가. -->
     <form action="" method="" enctype="">
+    <fieldset>
+        <legend> &nbsp;입력 양식</legend>
+       <div><label for="name1">이  름 : </label> <input type="text" name="name1" id="name1"></div> 
+       <div><label for="mail">이메일 : </label> <input type="email" name="mail" id="mail"></div> 
+       <div><input type="submit" value="쿼리전송"></div>   
+    </fieldset>
     </form>
 
 </body>
