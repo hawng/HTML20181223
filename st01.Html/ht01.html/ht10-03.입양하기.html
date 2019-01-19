@@ -4,31 +4,43 @@
     <meta charset="utf-8">
     <title>내가 처음 만드는 HTML 문서</title>
     <style>
+        header{background: crimson; font-size: x-large; border: none; width: 100%; height: 30%;}
+        nav {font-style: inherit; border:none; float: left; width: 100%; height: 5%; float: left; margin-top: 2px; }
+        article{ border: 1px; border: gray solid; width: 50%; height: 50%; float: left; margin-top: 2px;}
+        footer{background: darkgrey; clear: both; width: 100%; height: 30%; margin-top: 30px;}
+        p{ line-height: 20px; text-align: center; color: white;}
+        #ul { list-style: none;}
+        #li {display: inline-block;}
     </style>
 </head>
 <body>
+    <header>
         <h1>입양하기</h1>
-
-        <ul>
-            <li><a href="#">애완견 종류</a></li>
-            <li><a href="#">입양하기</a></li>
-            <li><a href="#">건강돌보기</a></li>
-            <li><a href="#">더불어살기</a></li>
+    </header>
+    <nav>
+        <ul id="ul">
+            <li id="li"><a href="#">애완견 종류</a></li>
+            <li id="li"><a href="#">입양하기</a></li>
+            <li id="li"><a href="#">건강돌보기</a></li>
+            <li id="li"><a href="#">더불어살기</a></li>
         </ul>
+    </nav>
 
-            <h2>강아지 용품 준비하기</h2>
-            <ul>
-                <li>강아지 집 </li>
-                <li>강아지 먹이 </li>
-                <li>밥그릇, 물병 </li>
-                <li>이름표, 목줄</li>
-                <li>장난감, 개껌</li>
-                <li>애견용 간식</li>
-                <li>브러쉬, 빗, 털 제거 롤</li>
-                <li>귀 세정액, 구강스프레이, 기타 영양제 </li>
-                <li>샴푸, 린스, 애견용 타올 </li>
-            </ul>
-
-        <p>Copyright 2012 funnycom</p>
+    <article>
+        <h2>강아지 용품 준비하기</h2>
+        <ul>
+            <li>강아지 집 </li>
+            <li>강아지 먹이 </li>
+            <li>밥그릇, 물병 </li>
+            <li>이름표, 목줄</li>
+            <li>장난감, 개껌</li>
+            <li>애견용 간식</li>
+            <li>브러쉬, 빗, 털 제거 롤</li>
+            <li>귀 세정액, 구강스프레이, 기타 영양제 </li>
+            <li>샴푸, 린스, 애견용 타올 </li>
+        </ul>
+    </article>
+        &nbsp; 
+       <footer><p>Copyright 2012 funnycom</p></footer>  
 </body>
 </html>

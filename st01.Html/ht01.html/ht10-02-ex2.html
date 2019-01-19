@@ -4,9 +4,38 @@
     <meta charset="utf-8">
     <title></title>
     <style>
+        * {background: lightgrey; padding: 0px; margin: 10px; text-align: center}
+        html,body {height: 100%; width: 100%}
+        header { background: #78d0d1; height: 5%;}
+
+        #box {height:30%; width:100%; display: flex; align-items: center;}
+        nav { background: #e9e661; width: 30%; height: 100%; float: left; margin: auto;}
+        section { width: 80%; height: 20%; margin: 10px; margin-top: 10px;}
+        article { background: #95db5e; width: 30%; height: 100%; margin: auto; display: inline-block; }
+        aside { background: #efb14e; width: 30%; height: 100%; margin: auto; float: right;}
+        footer { background: #78d0d1; clear: both; height: 5%;}
+
+        .a1 { background: orchid; }
+        .a2 { background: #fe5514; }
     </style>
 </head>
 <body>
+    <header>header</header>
 
+    <div id="box">
+        <nav>nav</nav>
+        <article>
+            article
+                <section class="a1">section_1</section>
+                <section class="a1">section_1</section>
+        </article>
+        <aside>aside
+                <section class="a2">section_2</section>
+                <section class="a2">section_2</section>
+                <section class="a2">section_2</section>
+        </aside>
+    </div>
+
+    <footer>footer</footer>
 </body>
 <html>

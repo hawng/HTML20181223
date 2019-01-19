@@ -2,9 +2,19 @@
 <html>
 <head>
     <title>CSS3 Selector Basic Page</title>
+    <style>
+        input[type] { background: red;}
+        input[type="text"] { background: #bc8f8f }
+        input[name="password"] { background: #0000ff;}
+        input[value="findme"] { background: #ffff00;}
+        input { background: #ffff00;}
+        input[disabled] { background: #808080;}
+        input[value="a1"] {background: #87ceed;}
+    </style>
 </head>
 <body>
     <input type="text" />
+    <input type="password" />
     <input name="password" />
     <input value="findme" />
 
@@ -12,5 +22,7 @@
     <input />
     <h2>사용 불가능</h2>
     <input disabled />
+    <p type="text" name="password" value="findme">중복 가능</p>
+    <input value="a1" />
 </body>
-</html>
+</html>
