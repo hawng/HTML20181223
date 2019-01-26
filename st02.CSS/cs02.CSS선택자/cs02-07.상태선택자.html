@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>상태선택자</title>
+    <style>
         /* 블락 태그를 인라인으로 바꾸는 방법
            1. display 를 이용하는 방법
            2. float를 이용하는 방법
         */
-        
+        ul>li {
+            background: #ff0000;/*배경색지정*/
+            list-style: none; /*라인 가로 설정*/
+            display: inline-block; /*라인 고정*/
+            padding: 25px; /*배경 크기 지정*/
+            margin-left: -6px;/*자간 간격 조정*/
+        }
+
         /* 브라우저 스타일 초기화 */
+        ul>li:nth-child(odd) { background: orange; }
+
+        /*짝수 태그 지정*/
+        ul>li:nth-child(even) { background-color: pink; }
+
+        /*첫번쨰 태그 찾기*/
+        /* 1. ul>li:first-child { border-top-left-radius: 6px; border-bottom-left-radius: 6px; }*/
+              ul >li:first-child { border-radius: 6px 0 0 6px; }
+
+        /*마지막 태그 찾기*/
+        ul>li:last-child { /* border-top-right-radius: 6px; border-bottom-right-radius: 6px;*/
+                              border-radius: 0 6px 6px 0; }
+
+    </style>
+
 </head>
+
 <body>
     <pre>
         블락 태그를 인라인으로 바꾸는 방법
@@ -27,4 +52,5 @@
         <li>8번째</li>
     </ul>
 </body>
-</html>
+
+</html>

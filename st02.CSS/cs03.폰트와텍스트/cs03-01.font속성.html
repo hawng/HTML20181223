@@ -3,18 +3,42 @@
 <head>
     <meta charset="utf-8">
     <title>폰트 CSS 속성</title>
+    <style>
+         /*내부 폰트 사용*/
+        #font1 { font-family: serif;}
+        #font2 { font-family: "나눔바른고딕";}
+        /*외부 폰트 사용*/
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+        #font3 {font-family: 'Nanum Brush Script', serif;}
+        /*font-face로 폰트 사용*/
+        @font-face { font-family: "NanumBarunGothicWebBold"; font-style: "bold"; font-weight: 700px; src: url(NanumBarunGothicWebBold.woff); }
+        #font4 { font-family: "NanumBarunGothicWebBold";}
+        /**/
+        @font-face { font-family: "NanumBarunGothicWebBold"; font-style: "bold"; font-weight: 700px; src: url(http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff);}
+        #font5 { font-family: "NanumBarunGothicWebBold"; }
+        /*폰트 사이즈 px, %, em 사용해보기*/
+        p.size1 { font-size: 20px;}
+        p.size2 { font-size: 70%;}
+        p.size3 { font-size: 2.5em;}
+        /*폰트 스타일 지정*/
+        p.no1{font-style: normal;}
+        p.no2{font-style: italic;}
+        p.no3{font-style: oblique;}
+
+    </style>
 </head>
 <body>
-    <pre>
-구글에서 "나눔고딕 폰트" 로 검색로 후 설치 
-구글에서 "웹 무료 폰트" 로 검색
-'http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff' 
-    </pre>
+<!--<pre>
+    구글에서 "나눔고딕 폰트" 로 검색로 후 설치 
+    구글에서 "웹 무료 폰트" 로 검색
+    'http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff' </pre> -->
+<!-- 한국 무료 폰트 웹 사용
+    https://fonts.google.com/earlyaccess
+    http://makebct.net/%EA%B5%AC%EA%B8%80%EC%9B%B9%ED%8F%B0%ED%8A%B8-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0/?cat=148/-->
 
     <h2>내부 폰트를 사용하는 텍스트 !!!</h2>
-    <p> 변경전: serif font를 이용하여 폰트를 적용한 텍스트 !!! </p>
-    <p id="font1"> 변경후: serif font를 이용하여 폰트를 적용한 텍스트 !!! </p>
-    
+    <p>변경전: serif font를 이용하여 폰트를 적용한 텍스트 !!!</p>
+    <p id="font1">변경후: serif font를 이용하여 폰트를 적용한 텍스트 !!! </p>
     <p> 변경전: 나눔고딕 font를 이용하여 폰트를 적용한 텍스트 !!! </p>
     <p id="font2"> 변경후: 나눔고딕 font를 이용하여 폰트를 적용한 텍스트 !!! </p>
     <hr>
@@ -32,7 +56,7 @@
     <hr>
 
     <h2>font-size 설정 : 단위: px, %(부모 태그를 기준으로), em </h2>
-    <p> font-size 속성 적용 전  </p>
+    <p> font-size 속성 적용 전 : M </p>
     <p class = "size1"> font-size 속성 값 : px </p>
     <p class = "size2"> font-size 속성 값 : % </p>
     <p class = "size3"> font-size 속성 값 : em </p>
