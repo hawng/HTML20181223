@@ -2,6 +2,11 @@
 <html>
 <head>
     <title>text-overflow</title>
+    <style>
+        div.a       {width: 100px; border:2px solid #008000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+                                                            /*white-space: nowrap; overflow: hidden; text-overflow: ellipsis; 는 같이 움직임!!*/
+        div.a:hover { overflow: visible; }
+    </style>
 </head>
 <body>
     <h1>The text-overflow</h1>
