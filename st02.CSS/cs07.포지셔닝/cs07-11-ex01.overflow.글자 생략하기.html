@@ -2,6 +2,12 @@
 <html>
 <head>
     <title>Ellipsis</title>
+    <style>
+        h1.ellipsis { width: 300px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+        h1.ellipsis:hover { white-space: wrap; width: 100%;}
+        p.ellipsis { width: 100px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+        p.ellipsis:hover { width: 100%; }
+    </style>
 </head>
 <body>
     <h1 class="ellipsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>

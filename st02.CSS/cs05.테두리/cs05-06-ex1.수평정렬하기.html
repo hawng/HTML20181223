@@ -2,6 +2,14 @@
 <html>
 <head>
     <title>Float With Overflow</title>
+    <style>
+        .item { width: 100px; height: 50px; float: left; margin: 10px; text-align: center; padding-top:30px;
+                border-top:1px dashed red; 
+                border-right: 1px dashed black; 
+                border-bottom: 1px dashed blue; 
+                border-inline-start: 1px dashed black; }
+        div.container::after { clear:both; display:block; content:'';}
+    </style>
 </head>
 <body>
     <div class="container">
@@ -10,5 +18,7 @@
         <div class="item">메뉴 - 3</div>
         <div class="item">메뉴 - 4</div>
     </div>
+
+
 </body>
-</html>
+</html>

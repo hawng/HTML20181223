@@ -3,6 +3,12 @@
 <head>
     <meta charset="utf-8">
     <title>z-index 속성</title>
+    <style>
+        div { border: 1px; margin: 0 10px 0 10px; width: 100px; height: 20px;}
+        div.b1 { position: absolute; left: 0px; top: 0px; background-color: red;}
+        div.b2 { position: relative; left: -5px; top: -5px; background-color: black; color: white;}
+        div.b3 { position: relative; left: -10px; top: -10px; background-color: green;}
+    </style>
 </head>
 <body>
     <div id="wrapper">
@@ -11,4 +17,4 @@
         <div class="b3">3</div>
     </div>
 </body>
-</html>
+</html>

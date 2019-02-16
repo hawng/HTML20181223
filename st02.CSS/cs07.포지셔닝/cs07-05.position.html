@@ -3,10 +3,19 @@
 <head>
     <meta charset="utf-8">
     <title>position</title>
+    <style>
+        div { height: 40px; margin: 0 20px 0 20px; }
+        #pos1 { background-color: red;}
+        #pos2 { background-color: black; color:skyblue; 
+                position: relative; /*부모 태그(body)를 기준*/
+                left: 500px; /*x축에서부터*/
+                top: 500px; /*y축에서부터*/}
+        #pos3 { background-color: yellow; }
+    </style>
 </head>
 <body>
     <div id="pos1">첫번째</div>
     <div id="pos2">두번째</div>
     <div id="pos3">세번째</div>
 </body>
-</html>
+</html>

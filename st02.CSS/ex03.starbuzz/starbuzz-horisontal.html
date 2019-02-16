@@ -3,6 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Starbuzz Coffee</title>
+    <style>
+      /*상단*/
+      h1 { color: saddlebrown;}
+      #header { border: 5px solid saddlebrown;background-color: sandybrown;}
+      #headerSlogan { float: right;} 
+      #award { position: absolute; left: 50%; top: 5%; }
+
+      #tableRow { float:left; border: 10px solid saddlebrown; background-color: sandybrown}
+      #tableRow > div { float: left; box-sizing: border-box;/*박스 그리는 기준 변경*/}
+      #tableRow::after { clear: both; display: block; content: '';}
+      #tableRow a:link { color: pink;}
+      #drinks { width: 25%; text-align: center; }
+      #main { width : 50%; text-align: center;}
+      #sidebar { width: 25%; text-align: center; float: right;}
+      #coupon { position: absolute; left: 1%; top: 90%; }
+
+      #footer { border: 5px solid saddlebrown;; background-color: sandybrown; clear: both; text-align: center; }
+    </style>
   </head>
 
   <body>
@@ -123,4 +141,4 @@
     </div>
 
   </body>
-</html>
+</html>
