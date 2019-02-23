@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        #dir-row { display: flex; flex-direction: row; }
+        #dir-row > div { width: 200px; height: 200px; border: 1px solid black;}
+        #dir-col { display: flex; flex-direction: column;}
+        #dir-col > div { width: 500px; height: 50px; border: 1px solid black;}
+        #wrap-rew { width: 500px; display: flex; flex-direction: row; flex-wrap: wrap;}
+        #wrap-row > div { width: 200px; height: 200px; border: 1px solid red;}
+        #wrap-col { width: 500px; display: flex; flex-direction: row; flex-wrap: wrap-reverse;}
+        #wrap-col > div { width: 200px; height: 200px; border: 1px solid red;}
+    </style>
+
 </head>
 <body>
     <div id="dir-row">
@@ -36,4 +47,4 @@
     </div>
 
 </body>
-</html>
+</html>

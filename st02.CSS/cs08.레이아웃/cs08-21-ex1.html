@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>Document</title>
+    <style>
+        * { margin: 0; padding: 0;}
+        html,body,#wrap { width: 100%; height: 100%; }
+        /* 머릿말 레이아웃*/
+        .header { height: 80px; width: 100%; background-color: red;}
+        h1 { height: 140px; float: left;}
+        nav { min-height: 80px;}
+        /*본문 레이아웃*/
+        section { height: calc( 50% - 80px); }
+        #wrap { display: flex; flex-direction: row; flex-wrap: wrap;}
+        .slider_section { width: 50%; background-color: royalblue;}
+        .gallery_section { width: 25%; background-color: yellow;}
+        .rankup_section { width: 25%; background-color: greenyellow;}
+        .latest_post_section { width: 30%; background-color: lavender;}
+        .popular_post_section{ width: 30%; background-color: orangered;}
+        .banner_section { width: 20%; display: flex; flex-direction: column; flex-wrap: wrap;}
+        .banner_box_01 { background-color: skyblue; height: 50%;}
+        .banner_box_02 { background-color: blue; height: 50%;}
+        .social_section { width: 20%; background-color: violet;}
+        /*아랫말 레이아웃*/
+        .footer { width: 100%; height: 80px; background-color: gray;}
+    </style>
 </head>
 <body>
     <div id="wrap">
         <header class="header">
-            <h1>1-1</h1>
-            <nav>1</nav>            
+        <h1>1-1</h1>
+        <nav>1</nav>            
         </header>
         <section class="slider_section">2</section>
         <section class="gallery_section">3</section>
@@ -24,4 +46,4 @@
         <footer class="footer">9</footer>
     </div>
 </body>
-</html>
+</html>
